@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRO CFM – Asset &amp; Maintenance</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">●</span>
+        <span class="brand-name">PRO&nbsp;CFM</span>
+      </div>
+      <div class="topbar-search">
+        <input type="search" placeholder="Assets, Standorte oder Personen suchen" />
+      </div>
+      <div class="topbar-actions">
+        <button class="ghost">+ Neues Asset</button>
+        <button class="avatar" aria-label="Profil">
+          <span>AG</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="dashboard">
+      <aside class="menu">
+        <h2>Bereiche</h2>
+        <nav class="menu-list">
+          <button class="menu-item is-active" data-target="assets">
+            <span>Asset &amp; Maintenance</span>
+            <span class="pill">12</span>
+          </button>
+          <button class="menu-item" data-target="maintenance">
+            <span>Wartungspläne</span>
+            <span class="pill muted">4</span>
+          </button>
+          <button class="menu-item" data-target="tasks">
+            <span>Aufgaben</span>
+            <span class="pill muted">7</span>
+          </button>
+          <button class="menu-item" data-target="insights">
+            <span>Insights</span>
+            <span class="pill muted">3</span>
+          </button>
+        </nav>
+        <section class="menu-hint">
+          <h3>Schnellzugriff</h3>
+          <ul>
+            <li>Letzte Wartung</li>
+            <li>Lieferanten</li>
+            <li>Verträge</li>
+          </ul>
+        </section>
+      </aside>
+
+      <section class="workspace">
+        <section class="hero">
+          <header>
+            <h1>Asset &amp; Maintenance</h1>
+            <p>Alles an einem Ort verwalten – übersichtlich, schnell und mobilfreundlich.</p>
+          </header>
+          <div class="hero-actions">
+            <button class="primary">Asset erfassen</button>
+            <button class="ghost">Wartung planen</button>
+          </div>
+        </section>
+
+        <section class="quick-stats">
+          <article class="stat-card">
+            <h3>Aktive Assets</h3>
+            <p class="value">128</p>
+            <p class="delta positive">+6 diese Woche</p>
+          </article>
+          <article class="stat-card">
+            <h3>Offene Tickets</h3>
+            <p class="value">9</p>
+            <p class="delta">3 mit hoher Priorität</p>
+          </article>
+          <article class="stat-card">
+            <h3>Nächste Wartung</h3>
+            <p class="value">15. Feb</p>
+            <p class="delta">Gebäude A – Aufzug</p>
+          </article>
+        </section>
+
+        <section class="content">
+          <article class="list-card">
+            <header>
+              <h2>Portfolio</h2>
+              <button class="ghost small">Filtern</button>
+            </header>
+            <ul class="asset-list" aria-label="Asset-Liste">
+              <li class="asset-item is-selected" tabindex="0">
+                <div>
+                  <strong>München Campus</strong>
+                  <span>12 Gebäude · 46 Wartungszyklen</span>
+                </div>
+                <span class="chip success">Stabil</span>
+              </li>
+              <li class="asset-item" tabindex="0">
+                <div>
+                  <strong>Berlin Office</strong>
+                  <span>5 Gebäude · 18 Wartungszyklen</span>
+                </div>
+                <span class="chip warning">Überprüfung</span>
+              </li>
+              <li class="asset-item" tabindex="0">
+                <div>
+                  <strong>Hamburg Depot</strong>
+                  <span>8 Gebäude · 23 Wartungszyklen</span>
+                </div>
+                <span class="chip muted">Planung</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="details-card">
+            <header>
+              <h2>Details</h2>
+              <button class="ghost small">Bearbeiten</button>
+            </header>
+            <div class="details-body">
+              <p class="details-title">München Campus</p>
+              <dl>
+                <div>
+                  <dt>Verantwortlich</dt>
+                  <dd>Sara Schneider</dd>
+                </div>
+                <div>
+                  <dt>Letzte Wartung</dt>
+                  <dd>08. Feb · HVAC System</dd>
+                </div>
+                <div>
+                  <dt>Nächste Schritte</dt>
+                  <dd>Brandschutzprüfung vorbereiten</dd>
+                </div>
+              </dl>
+              <button class="primary full">Workflow öffnen</button>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <aside class="context">
+        <section class="timeline">
+          <h2>Aktivität</h2>
+          <ul>
+            <li>
+              <strong>Inspektion abgeschlossen</strong>
+              <span>vor 2 Stunden · Technikzentrum</span>
+            </li>
+            <li>
+              <strong>Neues Ticket</strong>
+              <span>vor 5 Stunden · Aufzug B</span>
+            </li>
+            <li>
+              <strong>Wartungsauftrag geplant</strong>
+              <span>gestern · Dachanlage</span>
+            </li>
+          </ul>
+        </section>
+        <section class="context-card">
+          <h2>Favoriten</h2>
+          <button class="ghost small">Alle anzeigen</button>
+          <ul>
+            <li>Checklisten</li>
+            <li>Dokumentation</li>
+            <li>Lieferanten</li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
